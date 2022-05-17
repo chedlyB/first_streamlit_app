@@ -28,7 +28,7 @@ streamlit.dataframe(fruits_to_show)
 
 #New Section to display fruityvice api response
 streamlit.header('Fruitvice Fruit Advice !')
-fruit_choice = streamlit.text_input('what fruit would you like information about?', 'jackfruit')
+fruit_choice = streamlit.text_input('what fruit would you like information about?', 'kiwi')
 
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
@@ -50,7 +50,7 @@ streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
 
-add_my_fruit = streamlit.text_input('what fruit would you like to add?', 'kiwi')
+add_my_fruit = streamlit.text_input('what fruit would you like to add?', 'jackfruit')
 
 streamlit.text('thanks for adding ' + add_my_fruit)
 
